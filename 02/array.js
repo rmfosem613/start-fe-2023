@@ -64,7 +64,7 @@ var newNums = nums
     return num + 10;
 });
 
-console.log(newNums);
+console.log(typeof(newNums));
 
 
 
