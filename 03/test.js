@@ -91,9 +91,11 @@ console.log(todos);
 
 // 주요 전역함수 -> window 객체에 있는 함수
 
-// alert("alert");
+// alert("2alert");
 
 // var who = prompt("당신은 누구세요?");
+
+// alert(who);
 
 // var isDelete = confirm("정말 삭제합니까?");
 
@@ -268,3 +270,50 @@ var obj = new Obj();
 // apply() -> this는 해당 문맥을 강제로 바꿔줌
 
 // class -> 넘어감
+
+// var count = [10,20,30,40,50,60,70,100];  배열 count 요소들의 평균값 구하는 코드
+// var count = [10, 20, 30, 40, 50, 60, 70, 100];
+// var sum = 0;
+// for (var n = 0; n < count.length; n++) {
+//   sum += count[n];
+// }
+// console.log(sum / count.length);
+
+// 구구단
+// for (var n = 1; n < 10; n++) {
+//   for (var m = 1; m < 10; m++) {
+//     console.log(n + "*" + m + "=" + m * n);
+//   }
+// }
+
+// 구구단 함수
+// function gugudan(num) {
+//   for (var n = 1; n < 10; n++) {
+//     console.log(num + "*" + n + "=" + num * n);
+//   }
+// }
+// var num = 2; // 2단 출력
+// gugudan(num);
+
+// 메소드가 포함된 객체
+// const gugudan_obj = {
+//   _2: function () {
+//     for (var n = 1; n < 10; n++) {
+//       console.log("2 *" + n + "=" + 2 * n);
+//     }
+//   },
+//   _3: function () {
+//     for (var n = 1; n < 10; n++) {
+//       console.log("3 *" + n + "=" + 3 * n);
+//     }
+//   },
+// };
+// gugudan_obj._2();
+
+// window.prompt() 를 사용하여 사용자에게 숫자값을 입력받고 받은 숫자값들의 합을 출력하는 코드
+// var result = 0;
+// do {
+//   promptNum = window.prompt("정수를 입력하세요");
+//   result += Number(promptNum);
+// } while (promptNum !== null);
+// alert("정수의 총합은 " + result + " 입니다.");
