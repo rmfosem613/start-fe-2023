@@ -2,6 +2,8 @@
 const dday = "2022-02-02";
 
 // quiz
+// Date 객체를 써야함 -> 달이 넘어갈 경우
+// setDate, getDate 활용
 let change = dday.split("-").map((item) => parseInt(item));
 
 let year = change[0];

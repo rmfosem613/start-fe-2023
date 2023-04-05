@@ -6,6 +6,7 @@ const pageSize = 3;
 
 // quiz
 // pageSize에 따라 배열값 분리해서 출력
+// array chunk
 
 let arr = [];
 

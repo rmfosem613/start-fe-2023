@@ -9,5 +9,7 @@ items.forEach((item, index) => {
   }
 });
 
+// filter 메소드 사용해서 짝수값만 뽑아올수도 있음
+
 // 출력: 짝수만 [2,4,6,8,10]
 console.log("짝수만", arr);

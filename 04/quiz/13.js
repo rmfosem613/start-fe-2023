@@ -6,6 +6,7 @@ const pageSize = 3;
 
 const getStartIndexByPage = function (page) {
   // quiz
+  return (page - 1) * pageSize;
 };
 
 // 출력
