@@ -14,24 +14,38 @@
       .black {
         background-color: #000;
       }
+      .red {
+        background-color: red;
+      }
     </style>
   </head>
   <body>
     <div id="chessboard" style="width: 210px"></div>
     <script>
-      var chessboard = document.getElementById("chessboard");
-      for (var i = 0; i < 4; i++) {
-        for (var j = 0; j < 4; j++) {
-          var square = document.createElement("div");
+      let chessboard = document.getElementById("chessboard");
+      for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+          let square = document.createElement("div");
           square.className = "square";
           if ((i + j) % 2 === 0) {
-            square.classList.add("black", i + j);
+            square.classList.add("black");
           } else {
-            square.classList.add("white", i + j);
+            square.classList.add("white");
           }
           chessboard.appendChild(square);
         }
       }
+
+      let prevtarget = "";
+
+      chessboard.addEventListener("click", (event) => {
+        console.log(event.target);
+        const target = event.target;
+        target.classList.add("red");
+
+        prevtarget && prevtarget.classList.remove("red");
+        prevtarget = target;
+      });
     </script>
   </body>
 </html>
