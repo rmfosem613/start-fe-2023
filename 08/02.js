@@ -51,8 +51,8 @@ var todayPhoto = [
 
 let curPage = 1;
 const pagePerItemCount = 3;
-const $prev = document.querySelector("#prevBtn");
-const $next = document.querySelector("#nextBtn");
+const $prev = document.getElementById("prevBtn");
+const $next = document.getElementById("nextBtn");
 const $wrap = document.getElementById("wrap");
 
 function addContents(idx) {
