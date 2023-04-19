@@ -6,7 +6,7 @@ function animate() {
   var intervalId = setInterval(function () {
     if (width >= 100) {
       clearInterval(intervalId);
-      setTimeout(decrement, 500); // 2초 후에 감소 함수 호출
+      setTimeout(decrement, 500);
     } else {
       width += increment;
       progress.style.width = width + "%";
@@ -20,7 +20,7 @@ function decrement() {
   var intervalId = setInterval(function () {
     if (width <= 0) {
       clearInterval(intervalId);
-      setTimeout(animate, 500); // 2초 후에 증가 함수 호출
+      setTimeout(animate, 500);
     } else {
       width += increment;
       progress.style.width = width + "%";
