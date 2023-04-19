@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quiz6</title>
     <style>
-      .box {
-        position: absolute;
-        left: 100px;
-        top: 100px;
+      body {
+        height: 100vh;
+      }
+      .drag {
         width: 100px;
         height: 100px;
-        background-color: #ddd;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .box1 {
-        left: 300px;
+        background-color: gray;
+        position: absolute;
       }
     </style>
   </head>
   <body>
-    <div class="box">Drag me!</div>
-    <div class="box box1">Drag me!</div>
+    <div class="drag">Drag me!</div>
+    <div class="drag">Drag me!</div>
+    <div class="drag">Drag me!</div>
+    <div class="drag">Drag me!</div>
+    <div class="drag">Drag me!</div>
 
     <ol>
       <li>박스를 누르면 드래그가 시작됩니다 (mousedown 이벤트)</li>
