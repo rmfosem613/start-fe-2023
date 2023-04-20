@@ -20,14 +20,16 @@ $box.addEventListener("click", (event) => {
   if (event.target === $bug) {
     point++;
     $point.textContent = point;
-    moveBug();
+    // moveBug();
   } else {
     life--;
     $life.textContent = life;
-    moveBug();
+    // moveBug();
 
     if ($life.textContent == 0) {
       alert("gameover");
     }
   }
 });
+
+setInterval(moveBug, 2000);

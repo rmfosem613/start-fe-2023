@@ -56,7 +56,9 @@ const $next = document.getElementById("nextBtn");
 const $wrap = document.getElementById("wrap");
 
 function addContents(idx) {
-  const { img, title } = todayPhoto[idx] || {};
+  // const { img, title } = todayPhoto[idx] || {};
+  const img = todayPhoto[idx].img;
+  const title = todayPhoto[idx].title;
   if (img && title) {
     const $div = document.createElement("div");
     const $img = document.createElement("img");
