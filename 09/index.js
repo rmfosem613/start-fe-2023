@@ -1,23 +1,27 @@
-let $count = document.querySelector(".count");
-let $plus = document.getElementById("plus");
-let $minus = document.getElementById("minus");
+const $count = document.querySelector(".count");
+const $plus = document.getElementById("plus");
+const $minus = document.getElementById("minus");
 
 let num = 10;
 
-$plus.addEventListener("click", (event) => {
-  num += 1;
+function updateCount() {
   $count.innerHTML = num;
-  //   console.log();
-});
+}
 
-$minus.addEventListener("click", (event) => {
+function plusCount() {
+  num += 1;
+  updateCount();
+}
+
+function minusCount() {
   num -= 1;
-  $count.innerHTML = num;
-  //   console.log();
-});
+  updateCount();
+}
 
 function init() {
-  $count.innerHTML = num;
+  updateCount();
+  $plus.addEventListener("click", plusCount);
+  $minus.addEventListener("click", minusCount);
 }
 
 init();
