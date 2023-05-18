@@ -1,0 +1,22 @@
+{
+  "name": "12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jquery": "3.7.0",
+    "json-server": "0.17.3",
+    "pretty-bytes": "6.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.21.5",
+    "@babel/core": "7.21.8"
+  }
+}
